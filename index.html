@@ -9,101 +9,113 @@
 <body>
     <header>
         <h1>Budget Buddy</h1>
-        <span>
+        <div>
             <h2>Welcome to Budget Buddy</h2>
             <p>Here you can see a breakdown of your expenses and income to plan for the future.</p>
-        </span>
+        </div>
     </header>
     <main>
-        <div class="income">
-            <h2>Income</h2>
-            <div>
-                <label for="income">Job 1:</label>
-                <input type="number" id="income" name="income" placeholder="Enter income" />
-            </div>
-            <div>
-                <label for="income">Job 2:</label>
-                <input type="number" id="income" name="income" placeholder="Enter income" />
-            </div>
-            <div>
-                <label for="income">Job 3+:</label>
-                <input type="number" id="income" name="income" placeholder="total income of 3+" />
-            </div>
-        </div>
-        <div class="expenses">
-            <h2>Expenses</h2>
-            <div class="housing">
-                <h3>Housing</h3>
-                <div>
-                    <label for="rent">Rent/Mortgage:</label>
-                    <input type="number" id="rent" name="rent" placeholder="Enter rent/mortgage" />
-                </div>
-                <div>
-                    <label for="electricity">Electricity:</label>
-                    <input type="number" id="electricity" name="electricity" placeholder="Enter electricity" />  
-                </div>
-                <div>
-                    <label for="utilities">Water:</label>
-                    <input type="number" id="water" name="water" placeholder="Enter water" />
-                </div>
-                <div>
-                    <label for="utilities">Gas:</label>
-                    <input type="number" id="gas" name="gas" placeholder="Enter natural gas" />
-            </div>
-            <div class="food">
-                <h3>Food</h3>
-                <div>
-                    <label for="groceries">Groceries:</label>
-                    <input type="number" id="groceries" name="groceries" placeholder="Enter groceries" />
-                </div>
-                <div>
-                    <label for="eatingOut">Eating Out:</label>
-                    <input type="number" id="eatingOut" name="eatingOut" placeholder="Enter eating out" />
-                </div>
-            </div>
-            <div class="transportation">
-                <h3>Transportation</h3>
-                <div>
-                    <label for="carPayment">Car Payment:</label>
-                    <input type="number" id="carPayment" name="carPayment" placeholder="Enter car payment" />
-                </div>
-                <div>
-                    <label for="insurance">Insurance:</label>
-                    <input type="number" id="insurance" name="insurance" placeholder="Enter insurance" />
-                </div>
-                <div>
-                    <label for="gas">Gas:</label>
-                    <input type="number" id="gas" name="gas" placeholder="Enter gas" />
-                </div>
-            </div>
-            <div class="debt">
-                <h3>Debt</h3>
-                <div>
-                    <label for="creditCard">Credit Cards:</label>
-                    <input type="number" id="creditCard" name="creditCard" placeholder="Enter total credit card" />
-                </div>
-                <div>
-                    <label for="studentLoan">Student Loan:</label>
-                    <input type="number" id="studentLoan" name="studentLoan" placeholder="Enter student loan" />
-                </div>
-                <div>
-                    <label for="personalLoan">Personal Loan:</label>
-                    <input type="number" id="personalLoan" name="personalLoan" placeholder="Enter personal loan" />
-                </div>
+        <aside>
 
+            <div class="income">
+                <h2>Income</h2>
+                <div>
+                    <label for="income">Job 1:</label>
+                    <input type="number" id="income" name="income" placeholder="Enter income" />
+                </div>
+                <div>
+                    <label for="income">Job 2:</label>
+                    <input type="number" id="income" name="income" placeholder="Enter income" />
+                </div>
+                <div>
+                    <label for="income">Job 3+:</label>
+                    <input type="number" id="income" name="income" placeholder="total income of 3+" />
+                </div>
+                <p class="income-total">Income Total: $0.00</p>
             </div>
-        </div>
-        <div class="savings">
-            <h2>Savings</h2>
-            <div>
-                <label for="emergency">Emergency Fund:</label>
-                <input type="number" id="emergency" name="emergency" placeholder="Enter emergency fund" /> 
+            <div class="expenses">
+                <h2>Expenses</h2>
+                <div class="housing">
+                    <h3>Housing</h3>
+                    <div>
+                        <label for="rent">Rent/Mortgage:</label>
+                        <input type="number" id="rent" name="rent" placeholder="Enter rent/mortgage" />
+                    </div>
+                    <div>
+                        <label for="electricity">Electricity:</label>
+                        <input type="number" id="electricity" name="electricity" placeholder="Enter electricity" />  
+                    </div>
+                    <div>
+                        <label for="utilities">Water:</label>
+                        <input type="number" id="water" name="water" placeholder="Enter water" />
+                    </div>
+                    <div>
+                        <label for="utilities">Gas:</label>
+                        <input type="number" id="gas" name="gas" placeholder="Enter natural gas" />
+                </div>
+                <div class="food">
+                    <h3>Food</h3>
+                    <div>
+                        <label for="groceries">Groceries:</label>
+                        <input type="number" id="groceries" name="groceries" placeholder="Enter groceries" />
+                    </div>
+                    <div>
+                        <label for="eatingOut">Eating Out:</label>
+                        <input type="number" id="eatingOut" name="eatingOut" placeholder="Enter eating out" />
+                    </div>
+                </div>
+                <div class="transportation">
+                    <h3>Transportation</h3>
+                    <div>
+                        <label for="carPayment">Car Payment:</label>
+                        <input type="number" id="carPayment" name="carPayment" placeholder="Enter car payment" />
+                    </div>
+                    <div>
+                        <label for="insurance">Insurance:</label>
+                        <input type="number" id="insurance" name="insurance" placeholder="Enter insurance" />
+                    </div>
+                    <div>
+                        <label for="gas">Gas:</label>
+                        <input type="number" id="gas" name="gas" placeholder="Enter gas" />
+                    </div>
+                </div>
+                <div class="debt">
+                    <h3>Debt</h3>
+                    <div>
+                        <label for="creditCard">Credit Cards:</label>
+                        <input type="number" id="creditCard" name="creditCard" placeholder="Enter total credit card" />
+                    </div>
+                    <div>
+                        <label for="studentLoan">Student Loan:</label>
+                        <input type="number" id="studentLoan" name="studentLoan" placeholder="Enter student loan" />
+                    </div>
+                    <div>
+                        <label for="personalLoan">Personal Loan:</label>
+                        <input type="number" id="personalLoan" name="personalLoan" placeholder="Enter personal loan" />
+                    </div>
+                </div>
+                <p class="expenses-total">Expenses Total: $0.00</p>
             </div>
-            <div>
-                <label for="retirement">Retirement:</label>
-                <input type="number" id="retirement" name="retirement" placeholder="Enter retirement" />
+            <div class="savings">
+                <h2>Savings</h2>
+                <div>
+                    <label for="emergency">Emergency Fund:</label>
+                    <input type="number" id="emergency" name="emergency" placeholder="Enter emergency fund" /> 
+                </div>
+                <div>
+                    <label for="retirement">Retirement:</label>
+                    <input type="number" id="retirement" name="retirement" placeholder="Enter retirement" />
+                </div>
+                <p class="savings-total">Savings Total: $0.00</p>
             </div>
-        </div>
+        </aside>
+        <aside>
+            <h2>Summary</h2>
+            <p>Income: $0.00</p>
+            <p>Expenses: $0.00</p>
+            <p>Savings: $0.00</p>
+            <p>Net: $0.00</p>
+        </aside>
     </main>
 </body>
 </html>
