@@ -87,5 +87,5 @@ const getExpenseTotal = () => {
   expensesTotal = expensesTotal.toFixed(2);
 
   expenseTotal.textContent = `$${expensesTotal}`;
-  // expenseSum.textContent = expenseTotal.textContent;
+   expenseSum.textContent = expenseTotal.textContent;
 };
