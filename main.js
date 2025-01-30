@@ -16,17 +16,27 @@ const studentLoan = document.getElementById('student-loan');
 const personalLoan = document.getElementById('personal-loan');
 const expenseTotal = document.querySelector('.expenses-total');
 const expenseSum = document.querySelector('.expenseSum');
+const emergencyFund = document.getElementById('emergency');
+const retirement= document.getElementById('retirement');
+const savingsTotal = document.querySelector('.savings-total');
+const savingsSum = document.querySelector('.savingSum');
+const net = document.querySelector('.net');
+
 let housingTotal = 0;
 let foodTotal = 0;
 let transportationTotal = 0;
 let debtTotal = 0;
 let expensesTotal = 0;
+let totalSaving = 0;
 
 const updateIncome = () => {
   getIncomeTotal();
 };
 const updateExpense = () => { 
   getExpenseTotal();
+};
+const updateSavings = () => {
+  getSavingsTotal();
 };
 
 income1.addEventListener('input', updateIncome);
@@ -43,7 +53,8 @@ carGas.addEventListener('input', updateExpense);
 creditCard.addEventListener('input', updateExpense);
 studentLoan.addEventListener('input', updateExpense);
 personalLoan.addEventListener('input', updateExpense);
-
+emergencyFund.addEventListener('input', updateSavings);
+retirement.addEventListener('input', updateSavings);
 
 const getIncomeTotal = () => {
   const income1Value = parseFloat(income1.value) || 0;
@@ -89,3 +100,14 @@ const getExpenseTotal = () => {
   expenseTotal.textContent = `$${expensesTotal}`;
    expenseSum.textContent = expenseTotal.textContent;
 };
+
+const getSavingsTotal = () => {
+  const emergencyFundValue = parseFloat(emergencyFund.value) || 0;
+  const retirementValue = parseFloat(retirement.value) || 0;
+  totalSaving = emergencyFundValue + retirementValue;
+  totalSaving = totalSaving.toFixed(2);
+
+  savingsTotal.textContent = `$${totalSaving}`;
+  savingsSum.textContent = savingsTotal.textContent;
+}
+ 
